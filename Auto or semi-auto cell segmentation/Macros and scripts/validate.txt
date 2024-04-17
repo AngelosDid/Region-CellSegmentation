@@ -1,0 +1,7 @@
+title = getTitle();
+setBatchMode(false);
+roiManager("Open", "C:/Users/angdid/Desktop/tests/ziped finalend corrected/" + title + ".zip");
+roiManager("Show All");
+waitForUser("Check, then press OK");
+run("Fresh Start");
+
