@@ -1,0 +1,5 @@
+setMinAndMax(290,1516);
+run("Scale...", "x=0.22 y=0.22 width=1 height=1 interpolation=None average create");
+
+
+

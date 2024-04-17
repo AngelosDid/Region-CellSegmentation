@@ -1,0 +1,5 @@
+try inserting 
+
+setBatchMode(false); 
+
+to your code
