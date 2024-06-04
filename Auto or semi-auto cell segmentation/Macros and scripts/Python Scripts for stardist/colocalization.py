@@ -304,6 +304,8 @@ def Count_Overlaps () :
             for big_roinumber in larger_chinfo:                                                           
                 if big_roinumber in already_overlapped.keys():                                             # THIS CAN BE altered if the user allows overlap of many small objects inside one. Here though, if the bigger neuron has successfuly overlapped with another, it's not tested for a second time.
                     continue
+                if big_roinumber == 'tuple':
+                    continue                                                                               # the tuple was inserted along with the keys (filenames of single rois). We want to skip this.
                 bigX_coords = larger_chinfo [big_roinumber] ['x']
                 bigY_coords = larger_chinfo [big_roinumber] ['y']
                 big_neuron = Polygon(list(zip(bigX_coords,bigY_coords)))
