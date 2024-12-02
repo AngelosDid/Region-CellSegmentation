@@ -1,1 +1,1 @@
-displays the name of each window it opens
+Displays the name of each window it opens for non-blinded segmentation. You need to copy this file and paste it to the main workspace directory, thereby replacing it with the already existent one.
