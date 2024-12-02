@@ -1,1 +1,4 @@
+You can find a tutorial in the link below 
 https://youtu.be/n5cqmiPbOb4
+
+If you see a black(or white) screen when running "2.segmentation_pipeline.ipynb", try tweaking the alpha value inside the code (type ctrl+f and search for alpha=).
