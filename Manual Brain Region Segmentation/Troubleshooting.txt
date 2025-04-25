@@ -1,0 +1,20 @@
+If the 1st script doesn't work or does not pack all the image's channels in the 'restchannels' pickle file,
+try the variations of the 1st script (separateDefaultandRest variations.rar) 
+
+Variations : 
+
+'1st for only 2 chanls' is a variation of separateDefaultandRest.ipynb for 2 channel only CZI images. Inside that directory
+there are recommendations for adjusting for CZI images with one channel only.
+
+'1st_tif_images' is a variation of separateDefaultandRest.ipynb for TIFF images for 3 or more channels.
+
+'1st_transpose_error' is a variation of separateDefaultandRest.ipynb for CZI images that yield a transpose error during processing.
+
+'2nd + namedisplay' is a variation of the segmentation_pipeliny.ipynb for unblinded segmentation of images (that is, name included)
+
+
+
+Having a CZI file with >3 channels that's reproducing only 3 channels? 
+Then comment out this line from the original separateDefaultandRest :
+eikona = cv2.cvtColor(eikona, cv2.COLOR_RGB2BGR)
+By commenting this line in general (regardless of the script variation) the creation of pickles might run faster.
