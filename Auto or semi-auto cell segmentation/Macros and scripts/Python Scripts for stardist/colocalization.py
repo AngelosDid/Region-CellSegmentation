@@ -132,7 +132,7 @@ def User_Input_Declare_Intersection ():
     mastertwo = Tk()
     text = f'Type the name ({distinct_word[0]} or {distinct_word[1]}) of the channel that you want to locate inside another.'
     text2 = f"For instance, if {distinct_word[0]} is cfos (only nucleus) and {distinct_word[1]} is NeuN(all cytoplasm), then you should type {distinct_word[0]} "
-    textpercentage = f"Type the minimum accepted percentage of intersection between a){distinct_word[0]} and b) {distinct_word[0]} intersection with {distinct_word[1]}"
+    textpercentage = f"Type the minimum accepted percentage of intersection between a) {distinct_word[0]} and b) {distinct_word[0]} intersection with {distinct_word[1]}"
     textpercentage2 = f"for an overlap to be considered as colocalization"
     
     Label(mastertwo, text=text,font=("Arial", 11)).grid(row=0)
@@ -363,4 +363,5 @@ CreateExcel(coloc_rois)                                                         
 Recreate_Rois(coloc_rois)
 
 None;
+
 
