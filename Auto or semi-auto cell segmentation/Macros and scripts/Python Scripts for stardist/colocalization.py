@@ -132,7 +132,7 @@ def User_Input_Declare_Intersection ():
     mastertwo = Tk()
     text = f'Type the name ({distinct_word[0]} or {distinct_word[1]}) of the channel that you want to locate inside another.'
     text2 = f"For instance, if {distinct_word[0]} is cfos (only nucleus) and {distinct_word[1]} is NeuN(all cytoplasm), then you should type {distinct_word[0]} "
-    textpercentage = f"Type the minimum accepted percentage of intersection between {distinct_word[0]} and {distinct_word[0]} ∩ {distinct_word[1]}"
+    textpercentage = f"Type the minimum accepted percentage of intersection between a){distinct_word[0]} and b) {distinct_word[0]} intersection with {distinct_word[1]}"
     textpercentage2 = f"for an overlap to be considered as colocalization"
     
     Label(mastertwo, text=text,font=("Arial", 11)).grid(row=0)
@@ -185,7 +185,7 @@ def CreateExcel (dict_with_rois) :
     df.index =['Colocalized','Total of the other channel']
     now = datetime.datetime.now()
     now = now.strftime("%Y-%m-%d %H:%M").replace(":","_")                               # i.e 2024-01-16 12_54     Meaning that it was created in 16th of January of 2024 at 12:54
-    df.to_excel(f'{excel_path}/Colocalization of {intersection} ∩ to other channel--{now}.xlsx', header=True,
+    df.to_excel(f'{excel_path}/Colocalization of {intersection} intersection to other channel--{now}.xlsx', header=True,
              sheet_name=f'At least {percentage}% colocalization')
 
 def Recreate_Rois (coloca_rois):
@@ -363,3 +363,4 @@ CreateExcel(coloc_rois)                                                         
 Recreate_Rois(coloc_rois)
 
 None;
+
